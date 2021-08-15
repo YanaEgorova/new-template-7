@@ -1,0 +1,19 @@
+.hero__wrapper {
+   background-color: var(--third-brand-color);
+   position: relative;
+}
+.hero__wrapper::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    display: block;
+    content: '';
+    background-color: var(--main-bg-color);
+}
+.hero {
+    padding: 20rem 0;
+    text-align: center;
+    position: relative;
+}

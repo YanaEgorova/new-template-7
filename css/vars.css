@@ -1,0 +1,19 @@
+:root {
+  --main-bg-color: #fff;
+  --sub-bg-color: #000;
+  --main-text-color: #000;
+  --sub-text-color: #fff;
+  --inactive: #a5a5a5;
+  --success: #bee3be;
+  --link-color: blue;
+  --accent-color: red;
+
+  /* --first-brand-color: violet; */
+  /* --second-brand-color: green; */
+  --third-brand-color: #f3ca20;
+
+  --main-font: 'Open Sans';
+  --title-font: 'Roboto';
+
+  font-size: 62.5%;
+}

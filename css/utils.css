@@ -1,0 +1,202 @@
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  min-height: 100vh;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+  font-weight: 300;
+}
+​img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  background-color: transparent;
+}
+button:hover {
+  cursor: pointer;
+}
+input:focus,
+input:active,
+button:active,
+button:focus {
+  outline: none;
+}
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main {
+  /* background-color: var(--third-brand-color); */
+}
+.bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  padding: 0 1.5rem;
+  max-width: 140rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  text-align: center;
+}
+/* LOGO HOVER START */
+.logo__box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+.logo {
+  position: relative;
+  overflow: hidden;
+}
+.logo::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  content: attr(data-text);
+  height: 100%;
+  top: 0;
+  background: none;
+  font-size: 4rem;
+  /* color: var(--sub-text-color); */
+  font-family: var(--title-font);
+  text-transform: uppercase;
+  transform-origin: 100% 50%;
+  transform: translate3d(150%, 0, 0);
+  transition: transform 0.3s cubic-bezier(0.5, 0.5, 0.3, 1);
+}
+.logo:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+.logo span {
+  display: inline-block;
+  font-size: 4rem;
+  /* color: var(--sub-text-color); */
+  font-family: var(--title-font);
+  text-transform: uppercase;
+  transition: transform 0.3s cubic-bezier(0.5, 0.5, 0.3, 1);
+}
+.logo:hover span {
+  transform: translate3d(-150%, 0, 0);
+}
+
+/* LOGO HOVER END */
+
+.title {
+  font-family: var(--title-font);
+  /* color: var(--third-brand-color); */
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+.sub-title {
+  font-family: var(--title-font);
+  font-size: 2rem;
+}
+.text {
+   font-size: 1.8rem;
+}
+.img {
+    width: 100%;
+    display: block;
+    max-width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  /* color: #fff; */
+  text-transform: capitalize;
+  /* background-color: - add your own background-color */
+  font-family: "Roboto", sans-serif;
+  /* put your font-family */
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 10rem;
+  border-radius: 5rem;
+  overflow: hidden;
+  transition: all 0.2s linear 0s;
+  border: .3rem solid black;
+}
+
+.bold {
+  text-decoration: underline;
+}
+.item:not(:last-child) {
+ 
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 3rem;
+  }
+  .title {
+   /* font-size: 4rem; */
+ }
+ .sub-title {
+  font-size: 3rem;
+}
+.btn:before {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='451.846px' height='451.847px' viewBox='0 0 451.846 451.847' style='enable-background:new 0 0 451.846 451.847;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744 L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284 c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+  position: absolute;
+  right: 2rem;
+  top: 0;
+  opacity: 0;
+  height: 100%;
+  width: 1.5rem;
+  transition: all 0.2s linear 0s;
+}
+.btn:hover {
+  text-indent: -20px;
+}
+.btn:hover:before {
+  opacity: 1;
+  text-indent: 0px;
+}
+}
