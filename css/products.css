@@ -43,7 +43,7 @@
     margin-top: 3rem;
 }
 .product__block {
-    border: .5rem solid var(--sub-bg-color);
+    border: .3rem solid var(--sub-bg-color);
     padding: 2rem 0;
     max-width: 35rem;
     margin-left: auto;
