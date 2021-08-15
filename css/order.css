@@ -10,6 +10,7 @@
     margin-right: auto;
     padding-left: 2rem;
     padding-right: 2rem;
+    min-width: 30rem;
 }
 .orders__btn svg {
     fill: var(--sub-bg-color);
